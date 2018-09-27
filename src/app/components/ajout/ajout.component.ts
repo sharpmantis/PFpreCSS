@@ -63,4 +63,12 @@ export class AjoutComponent implements OnInit {
       const Recette: RecetteInterface = this.recetteForm.value;     
       this.recetteService.addRecette(Recette);
   }
+
+  public noConexion: boolean=true;
+
+  public toggleConnexion(): void{
+    this.noConexion = !this.noConexion;
+    console.log("pouet")
+  }
+
 }

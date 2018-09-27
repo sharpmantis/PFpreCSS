@@ -1,7 +1,9 @@
-<p>
-  affichage works!
-</p>
-<button (click)="afficheRecette()">Liste des recetes</button>
+<button type="submit" [hidden]="!noConexion"  (click)="toggleConnexion()" (click)="afficheRecette()">Consulter recettes</button>
+<button type="submit" [hidden]="noConexion"  (click)="toggleConnexion()">Fermer recettes</button>
+
+<div [hidden]="noConexion">
+
+<!--<button (click)="afficheRecette()">Liste des recettes</button>-->
 
 <table overflow:auto>
   <thead>
@@ -23,4 +25,4 @@
   <tr>
     </tbody>
 </table>
-
+</div>

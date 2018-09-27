@@ -31,6 +31,12 @@ export class AffichageComponent implements OnInit {
     )
   };
 
+  public noConexion: boolean=true;
+
+  public toggleConnexion(): void{
+    this.noConexion = !this.noConexion;
+    console.log("pouet")
+  }
 
 
 }
