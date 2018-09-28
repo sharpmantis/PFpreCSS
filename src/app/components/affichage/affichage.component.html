@@ -1,18 +1,18 @@
-<button type="submit" [hidden]="!noConexion"  (click)="toggleConnexion()" (click)="afficheRecette()">Consulter recettes</button>
-<button type="submit" [hidden]="noConexion"  (click)="toggleConnexion()">Fermer recettes</button>
+<button classe="btn btn-info" type="submit" [hidden]="!noConexion"  (click)="toggleConnexion()" (click)="afficheRecette()">Consulter recettes</button>
+<button classe="btn btn-info" type="submit" [hidden]="noConexion"  (click)="toggleConnexion()">Fermer recettes</button>
 
 <div [hidden]="noConexion">
 
 <!--<button (click)="afficheRecette()">Liste des recettes</button>-->
 
-<table overflow:auto>
-  <thead>
-    <tr>
+<table overflow:auto class="table table-bordered table-striped">
+  <thead >
+    <tr class="info" >
       <td>Nom de la recette</td>
       <td>Nombre de personnes</td>
-      <td>tps de prepa</td>
-      <td>tps de cuisson</td>
-      <td> Instructions</td>
+      <td>Temps de preparation</td>
+      <td>Temps de cuisson</td>
+      <td>Instructions</td>
     </tr>
   </thead>
   <tbody>
@@ -21,7 +21,8 @@
     <td>{{ Recette.nb_personnes }}</td>
     <td>{{ Recette.temps_preparation }}</td>
     <td>{{ Recette.temps_cuisson }}</td>
-    <td>{{ Recette.instructions }}</td>
+    <td>{{ Recette.instructions }}   
+    </td>
   <tr>
     </tbody>
 </table>

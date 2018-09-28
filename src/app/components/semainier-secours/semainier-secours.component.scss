@@ -1,0 +1,76 @@
+.titre{
+    border: 2px;
+    color:rgb(37, 198, 238);
+    text-align: center;
+    margin: 50px;
+    font-family: French Script MT;
+    font-size: 6em;
+}
+.semaine {
+    text-align: center;
+    margin-bottom: 40px;
+    color:rgb(64, 64, 228);
+    font-size: 2em;
+    font-family: Times New Roman;
+
+}
+.date{
+    border: none;
+    margin-left: 30px;
+    width: 300px;
+    color:rgb(64, 64, 228);
+
+}
+thead {
+    font-family: monospace;
+    border: thin solid;
+    width: 50%;
+    padding: 5px;
+    font-size: 1.2em;
+    background-color: #D0E3FA;
+    text-align: center;
+    
+    
+    }
+
+.moment{
+    font-family: monospace;
+   
+    width: 100px;
+    padding: 65px;
+    background-color: #D0E3FA;
+    text-align: center; 
+    font-size: 1.2em;
+    border: thin double;
+    
+}
+.moment2{
+    font-family: monospace;
+   
+    width: 100px;
+    background-color: #D0E3FA;
+    text-align: center;  
+   font-size: 1.2em;
+   border: thin double;
+   
+}
+.imp{
+    
+    margin-bottom: 10px;
+    color:rgb(5, 5, 117);
+    border-radius: 50%;
+}
+
+.table-bordered td, .table-bordered th {
+ border-bottom: 1px  double;;
+}
+
+.modifier{
+   margin-left: 10px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    size: 10em;
+    border-radius: 50%;
+
+}
+

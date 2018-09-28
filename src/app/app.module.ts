@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ResultatComponent } from './components/resultat/resultat.component';
 import { AffichageComponent } from './components/affichage/affichage.component';
 import { SemainierSecoursComponent } from './components/semainier-secours/semainier-secours.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SemainierSecoursComponent } from './components/semainier-secours/semain
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

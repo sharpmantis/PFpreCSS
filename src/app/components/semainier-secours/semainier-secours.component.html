@@ -1,10 +1,13 @@
-<h2>
-  "SEMAINIER DE SECOURS ON-LINE!"
+<h2 class="titre">
+  Mon semainier !
 </h2>
-<div>Semaine du <input type="date">  au  <input type="date"></div>
-<a href="javascript:window.print()"><button>Print the page</button></a>
-<table>
-  <thead>
+<div class= "semaine" >Semaine du <input class="date" type="date">  au  <input class="date" type="date"></div>
+<div>
+<a href="javascript:window.print()"><button class="imp" ><i class="fa fa-print" style="font-size:36px"></i></button></a>
+<button class="btn btn-info modifier"(click)="afficheRecette()"><i class="fa fa-pencil"></i></button>
+</div>
+<table class="table table-bordered">
+  <thead >
     <tr>
       <td></td>
       <td></td>
@@ -19,8 +22,8 @@
   </thead>
   <tbody>
     <tr>
-      <td rowspan="3">Midi</td>
-      <td>Entrée</td>
+      <td class="moment" rowspan="3">Midi</td>
+      <td class="moment2">Entrée</td>
       <td>
         <select name="nom">
           <option *ngFor="let Recette of recettes">{{Recette.titre}}</option>
@@ -46,7 +49,7 @@
         </select></td>
     </tr>
     <tr>
-      <td>plat</td>
+      <td class="moment2">plat</td>
       <td>        <select name="nom">
           <option *ngFor="let Recette of recettes">{{Recette.titre}}</option>
         </select></td>
@@ -70,7 +73,7 @@
         </select></td>
     </tr>
     <tr>
-      <td>Dessert</td>
+      <td class="moment2">Dessert</td>
       <td>        <select name="nom">
           <option *ngFor="let Recette of recettes">{{Recette.titre}}</option>
         </select></td>
@@ -95,8 +98,8 @@
     </tr>
 
     <tr>
-      <td rowspan="3">Soir</td>
-      <td>Entrée</td>
+      <td class="moment" rowspan="3">Soir</td>
+      <td class="moment2">Entrée</td>
       <td>        <select name="nom">
           <option *ngFor="let Recette of recettes">{{Recette.titre}}</option>
         </select></td>
@@ -120,7 +123,7 @@
         </select></td>
     </tr>
     <tr>
-      <td>plat</td>
+      <td class="moment2">plat</td>
       <td>        <select name="nom">
           <option *ngFor="let Recette of recettes">{{Recette.titre}}</option>
         </select></td>
@@ -144,7 +147,7 @@
         </select></td>
     </tr>
     <tr>
-      <td>Dessert</td>
+      <td class="moment2">Dessert</td>
       <td>        <select name="nom">
           <option *ngFor="let Recette of recettes">{{Recette.titre}}</option>
         </select></td>
@@ -170,4 +173,3 @@
   </tbody>
 </table>
 
-<button (click)="afficheRecette()">Editer mon tableau</button>

@@ -1,29 +1,21 @@
 <button type="submit" [hidden]="!noConexion" (click)="toggleConnexion()">Ajouter une recette?</button>
 <div [hidden]="noConexion">
-  <form class="form" [formGroup]='recetteForm' (submit)=newRecette()>
     <div class="titre">
-      <tr>
-        <h2> Ma nouvelle recette</h2>
-      </tr>
+        <tr>
+          <h2> Ma nouvelle recette</h2>
+        </tr>
+      </div>
+  <form class="form-horizontal" [formGroup]='recetteForm' (submit)=newRecette()>
+    
+
+  
+
+    <div class="form-group">
+      Nom <input class="form-control" type="text" placeholder="Nom de la recette " formControlName="title">
     </div>
 
-    <!--
-  <div class="type">
-    <input type="checkbox" name="entree" id="entree" /> 
-      <label for="entree">Entrée</label>
-    <input type="checkbox" name="plat" id="plat" /> 
-      <label for="plat">Plat</label>
-    <input type="checkbox" name="dessert" id="dessert" /> 
-      <label for="dessert">Dessert</label>   
-  </div>
-  -->
-
-    <div class="nom">
-      nom <input type="text" placeholder="Nom de la recette " formControlName="title">
-    </div>
-
-    <div class="nbr">
-      nombre de personne <input type="number" formControlName="nb_personnes">
+    <div class="form-group">
+      Nombre de personne <input class="form-control" type="number" formControlName="nb_personnes">
     </div>
 
     <!--
@@ -31,10 +23,10 @@
   </div>
   -->
 
-    <div class="temps">
-      <div class="prepa">
+   
+      <div class="form-group">
         Temps de préparation (en min)
-        <input type="number" formControlName="temps_preparation">
+        <input class="form-control" type="number" formControlName="temps_preparation">
       </div>
 
       <!--
@@ -44,17 +36,15 @@
     </div>
     -->
 
-      <div class="cuiss">
+      <div class="form-group">
         Temps de cuisson (en min)
-        <input type="number" formControlName="temps_cuisson">
+        <input class="form-control" type="number" formControlName="temps_cuisson">
       </div>
-      <div class="total">
+     
+    
 
-      </div>
-    </div>
-
-    <div class="instruc">
-      Description <textarea autocapitalize="sentence" placeholder="recette" formControlName="instructions"></textarea>
+    <div class="form-group des">
+      Description <textarea class="form-control" autocapitalize="sentence" placeholder="Saisissez votre recette" formControlName="instructions"></textarea>
     </div>
 
     <!--
@@ -64,7 +54,7 @@
   -->
 
     <div>
-      <button type="submit" [hidden]="noConexion" (click)="toggleConnexion()">Ajouter</button>
+      <button classe="btn btn-info" type="submit" [hidden]="noConexion" (click)="toggleConnexion()">Ajouter</button>
     </div>
 
 
